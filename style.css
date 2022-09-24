@@ -79,6 +79,13 @@ button {
     color: hsl(179, 100%, 13%);
 }
 
+
+button:hover {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
 /****Mobile view**/
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
