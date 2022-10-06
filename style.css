@@ -24,16 +24,16 @@ body {
 }
 
 .card-one {
-    padding: 50px;
+    padding: 70px 50px;
     background-color: hsl(31, 77%, 52%);
 }
 .card-two {
-    padding: 50px; 
+    padding: 70px 50px; 
     background-color: hsl(184, 100%, 22%);
 }
 
 .card-three {
-    padding: 50px;
+    padding: 70px 50px;
     background-color: hsl(179, 100%, 13%);
 }
 
@@ -47,13 +47,14 @@ body {
 .card-description {
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
 .cards a {
     background-color: hsl(0, 0%, 95%);
+    width: 50%;
     margin-top: 70px;
     border: none;
     border-radius: 20px;
@@ -104,21 +105,21 @@ body {
     }
 
     .card-one {
-        padding: 30px;
+        padding: 70px 50px;
         background-color: hsl(31, 77%, 52%);
     }
     .card-two {
-        padding: 30px; 
+        padding: 70px 50px; 
         background-color: hsl(184, 100%, 22%);
     }
     
     .card-three {
-        padding: 30px;
+        padding: 70px 50px;
         background-color: hsl(179, 100%, 13%);
     }
 
     .cards a {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 }
 
@@ -141,20 +142,20 @@ body {
     }
 
     .card-one {
-        padding: 30px;
+        padding: 70px 50px;
         background-color: hsl(31, 77%, 52%);
     }
     .card-two {
-        padding: 30px; 
+        padding: 70px 50px; 
         background-color: hsl(184, 100%, 22%);
     }
-    
+
     .card-three {
-        padding: 30px;
+        padding: 70px 50px;
         background-color: hsl(179, 100%, 13%);
     }
 
     .cards a {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 }
