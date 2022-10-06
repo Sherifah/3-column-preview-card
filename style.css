@@ -3,20 +3,20 @@ font-family: 'Lexend Deca', sans-serif;*/
 
 body {
     background-color: hsl(0, 0%, 95%);
-    padding: 1em;
-    margin: 0;
-    position: relative;
+    padding: 0;
 }
 
 .container {
     width: 70%;
-    height: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 50px auto;
 }
 
 .cards {
     width: 100%;
-    height: 100%;
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(3, 1fr);
@@ -24,18 +24,15 @@ body {
 }
 
 .card-one {
-    height: 100%;
     padding: 50px;
     background-color: hsl(31, 77%, 52%);
 }
 .card-two {
-    height: 100%;
     padding: 50px; 
     background-color: hsl(184, 100%, 22%);
 }
 
 .card-three {
-    height: 100%;
     padding: 50px;
     background-color: hsl(179, 100%, 13%);
 }
@@ -55,32 +52,32 @@ body {
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-button {
+.cards a {
     background-color: hsl(0, 0%, 95%);
-    margin-top: 50px;
+    margin-top: 70px;
     border: none;
     border-radius: 20px;
-    padding: 5px 30px;
+    padding: 10px 30px;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    line-height: 2;
+    text-decoration: none;
 }
 
-.card-one button {
+.card-one a {
     color: hsl(31, 77%, 52%);
 }
 
-.card-two button {
+.card-two a {
     color: hsl(184, 100%, 22%);
 }
 
-.card-three button {
+.card-three a {
     color: hsl(179, 100%, 13%);
 }
 
 
-button:hover {
+.cards a:hover {
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -90,12 +87,19 @@ button:hover {
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
     .container {
-        margin: 15px auto;
+        width: 70%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
     }
 
-    .cards { 
-        display: flex;
-        flex-direction: column;
+    .cards {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(1, 1fr);
         text-align: left;
     }
 
@@ -113,7 +117,44 @@ button:hover {
         background-color: hsl(179, 100%, 13%);
     }
 
-    button {
+    .cards a {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 76px) and (max-width: 900px) {
+    .container {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+
+    .card-one {
+        padding: 30px;
+        background-color: hsl(31, 77%, 52%);
+    }
+    .card-two {
+        padding: 30px; 
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .card-three {
+        padding: 30px;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+    .cards a {
         margin-top: 30px;
     }
 }
