@@ -23,17 +23,18 @@ body {
     text-align: left;
 }
 
+.card {
+    padding: 70px 40px;
+}
+
 .card-one {
-    padding: 70px 50px;
     background-color: hsl(31, 77%, 52%);
 }
 .card-two {
-    padding: 70px 50px; 
     background-color: hsl(184, 100%, 22%);
 }
 
 .card-three {
-    padding: 70px 50px;
     background-color: hsl(179, 100%, 13%);
 }
 
@@ -54,14 +55,11 @@ body {
 
 .cards a {
     background-color: hsl(0, 0%, 95%);
-    width: 50%;
     margin-top: 70px;
     border: none;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
     text-decoration: none;
 }
 
