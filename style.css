@@ -1,0 +1,159 @@
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;*/
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+}
+
+.card {
+    padding: 70px 40px;
+}
+
+.card-one {
+    background-color: hsl(31, 77%, 52%);
+}
+.card-two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-three {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    line-height: 1.5;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards a {
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 70px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+.card-one a {
+    color: hsl(31, 77%, 52%);
+}
+
+.card-two a {
+    color: hsl(184, 100%, 22%);
+}
+
+.card-three a {
+    color: hsl(179, 100%, 13%);
+}
+
+
+.cards a:hover {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+/****Mobile view**/
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .container {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+
+    .card-one {
+        padding: 70px 50px;
+        background-color: hsl(31, 77%, 52%);
+    }
+    .card-two {
+        padding: 70px 50px; 
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .card-three {
+        padding: 70px 50px;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+    .cards a {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 76px) and (max-width: 900px) {
+    .container {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+
+    .card-one {
+        padding: 70px 50px;
+        background-color: hsl(31, 77%, 52%);
+    }
+    .card-two {
+        padding: 70px 50px; 
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    .card-three {
+        padding: 70px 50px;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+    .cards a {
+        margin-top: 50px;
+    }
+}
